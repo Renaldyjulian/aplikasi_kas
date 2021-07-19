@@ -23,6 +23,7 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nik</th>
+                                        <th>Nama</th>
                                         <th>Tahun</th>
                                         <th>Jenis KAS</th>
                                         <th>Jumlah</th>
@@ -33,13 +34,14 @@
                                 
                                 <tbody>
                                     <?php 
-                                            $sql = $mysqli -> query ("SELECT * FROM tb_spp,tb_jenis_spp,tb_tahun_ajaran,tb_tagihan_spp WHERE tb_tagihan_spp.kode_spp=tb_spp.kode_spp AND tb_spp.kode_jenis_spp=tb_jenis_spp.kode_jenis_spp AND tb_spp.kode_tahun_ajaran=tb_tahun_ajaran.kode_tahun_ajaran AND tb_spp.status='aktif' ORDER BY tahun_ajaran DESC");
+                                            $sql = $mysqli -> query ("SELECT * FROM tb_mahasiswa, tb_spp,tb_jenis_spp,tb_tahun_ajaran,tb_tagihan_spp WHERE tb_tagihan_spp.nim=tb_mahasiswa.nim AND tb_tagihan_spp.kode_spp=tb_spp.kode_spp AND tb_spp.kode_jenis_spp=tb_jenis_spp.kode_jenis_spp AND tb_spp.kode_tahun_ajaran=tb_tahun_ajaran.kode_tahun_ajaran AND tb_spp.status='aktif' ORDER BY tahun_ajaran DESC");
                                             $no=1;
                                             while ($data = $sql -> fetch_assoc()) {
                                     ?>
                                     <tr>
                                         <td ><?php echo $no++ ?></td>
                                         <td ><?php echo $data['nim']  ?></td>
+                                        <td ><?php echo $data['nama_mahasiswa']  ?></td>
                                         <td ><?php echo $data['tahun_ajaran']," - ", ucwords($data['semester']) ?></td>
                                         <td ><?php echo $data['keterangan_spp']  ?></td>
                                         <td ><?php echo $data['harga']?></td>

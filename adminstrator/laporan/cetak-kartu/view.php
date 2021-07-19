@@ -12,7 +12,7 @@
                         <div class="col-lg-3 col-md-10 col-sm-8 col-xs-7">
                             <div class="form-group">
                                 <div class="form-line">
-                                   <input type="text" id="nim" name="nim" class="form-control" placeholder="Inputkan Nim" onkeypress="return validKey(event || window.event, '0123456789');" required>
+                                   <input type="text" id="nim" name="nim" class="form-control" placeholder="Inputkan Nik" onkeypress="return validKey(event || window.event, '0123456789');" required>
                                 </div>
                             </div>
                         </div>

@@ -13,12 +13,12 @@
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active">
-                                    <a href="#mahasiswa" data-toggle="tab">Mahasiswa Per Semester
+                                    <a href="#mahasiswa" data-toggle="tab">Warga Perbulan
                                     </a>
                                 </li>
                                 <li role="presentation">
                                     <a href="#keuangan" data-toggle="tab">
-                                        Keuangan Per Semester
+                                        Keuangan Perbulan
                                     </a>
                                 </li>
                                 <li role="presentation">
