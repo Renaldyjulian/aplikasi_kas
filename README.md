@@ -13,7 +13,7 @@ Looking for Premium Templates?
 
 Demo
 ----------------
-You can check the website preview with **[this link](https://gurayyarar.github.io/AdminBSBMaterialDesign/)**  
+You can check the website preview with **[this link](https://project-uas-ti19b2.000webhostapp.com/)**  
 
 ![AdminBSB - Free Admin Template With Material Design](https://raw.githubusercontent.com/gurayyarar/AdminBSBMaterialDesign/master/images/screenshot.png)
 
